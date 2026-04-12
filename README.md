@@ -1,6 +1,6 @@
 # PhytoPulse — Industrial-Grade Digital Twin for Smart Agriculture
 
-![Banner](phytopulse_hero_banner.png)
+![Banner](phytopulse_demo.gif)
 
 ## 💡 The Vision: Spatial Intelligence for Precision Farming
 
@@ -19,14 +19,15 @@ In a commercial setting, PhytoPulse delivers tangible business value by:
 PhytoPulse currently operates as a **high-fidelity demonstration platform**. While it uses simulated data to showcase its capabilities, the architecture is built for **production-readiness**. This project serves as a modular foundation where 3D assets, sensor parameters, and data sources can be tailored to match the specific geometry and hardware of any physical greenhouse.
 
 ### Hardware Integration Guide (Swap-Ready)
+
 To transition from the current simulation to a live hardware environment, follow these professional guidelines:
 
 1. **Define Parameters** (`src/store/usePhytoStore.js`)  
    Modify the `THRESHOLDS` object to match your physical sensors' specifications (Min/Max ranges, units, and labels). The entire UI and alerting logic will adapt automatically.
 
 2. **Connect Data Source** (`src/hooks/useDataEngine.js`)  
-   Replace the `simulateSensors()` call with your actual data fetching logic.  
-   - Establish a connection via **MQTT**, **WebSockets**, or **REST API**.  
+   Replace the `simulateSensors()` call with your actual data fetching logic.
+   - Establish a connection via **MQTT**, **WebSockets**, or **REST API**.
    - Map your hardware's JSON payload to the `updateSimulated()` action in the state store.
 
 3. **Bind Actuators** (`src/components/ActuatorPanel.jsx`)  
