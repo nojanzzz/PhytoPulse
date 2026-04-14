@@ -124,6 +124,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Naufal Auzan R**
 Computer Engineering, Vocational School IPB University
-[Portfolio](your-portfolio-url) | [LinkedIn](your-linkedin-url)
+[Portfolio](https://port-jan.vercel.app/) | [LinkedIn](https://www.linkedin.com/in/naufalauzanr/)
 
 ---
